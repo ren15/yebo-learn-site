@@ -1,0 +1,9 @@
+#heroku deploy
+node_modules/
+src/
+gulp-tmp/
+gulpfile.js
+yebo-deploy/
+
+#github
+#node_modules/
