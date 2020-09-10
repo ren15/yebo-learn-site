@@ -120,7 +120,7 @@ img {
 }
 
 .container {
-  max-width: 100vw;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -459,8 +459,6 @@ img {
 }
 
 .content {
-  max-width: 100vw;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,6 +522,7 @@ img {
 
 .content-three__image-back {
   background: url(/img/Logo5-1.png) center center no-repeat;
+  width: 208px;
 }
 
 .content-three__icon {
@@ -531,7 +530,7 @@ img {
 }
 
 .content-four {
-  max-width: 100vw;
+  max-width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -663,6 +662,172 @@ img {
   -webkit-box-shadow: white 0 0px 0px 60px inset;
           box-shadow: white 0 0px 0px 60px inset;
   color: #282f35;
+}
+
+.slider-main {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 80px 0px;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow: hidden;
+  text-align: center;
+}
+
+.slider__element {
+  -webkit-transition: left 0.9s;
+  -o-transition: left 0.9s;
+  transition: left 0.9s;
+  width: 100%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  line-height: 36px;
+  padding: 0px 10px;
+}
+
+.slider__element h3 {
+  padding: 10px 0px;
+  font-size: 18px;
+  font-family: "9623";
+  color: #38393a;
+}
+
+.slider__element h3 span {
+  color: #a3a4a6;
+}
+
+.slider__element p {
+  font-size: 24px;
+  font-family: "9624";
+  color: #848688;
+}
+
+.slider__button {
+  padding: 10% 0px 0px 0px;
+}
+
+.button__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 -5px;
+}
+
+.button__list li {
+  list-style-type: none;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #a9aeb1;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.button__list li:hover {
+  background-color: #a9aeb1;
+  cursor: pointer;
+}
+
+.button__list.active {
+  background-color: #a9aeb1;
+}
+
+.email {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.email__title {
+  font-size: 24px;
+  font-family: "9624";
+  color: #848688;
+  position: relative;
+  padding: 120px 0px 0px 0px;
+  margin: 110px 0px 0px 0px;
+}
+
+.email__title:before {
+  position: absolute;
+  content: '';
+  background: url(/img/Logo-menu.png) center no-repeat;
+  top: 0;
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 85px;
+}
+
+.email__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 35px 10px 110px 10px;
+}
+
+.email__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 70%;
+          flex: 0 1 70%;
+  border: 1px solid #d3d6d8;
+  padding: 30px;
+  color: #848688;
+  font-size: 24px;
+  font-family: "9624";
+}
+
+.email__text::-webkit-input-placeholder {
+  color: #c8c8c8;
+}
+
+.email__text::-moz-placeholder {
+  color: #c8c8c8;
+}
+
+.email__text:-ms-input-placeholder {
+  color: #c8c8c8;
+}
+
+.email__text::-ms-input-placeholder {
+  color: #c8c8c8;
+}
+
+.email__text::placeholder {
+  color: #c8c8c8;
+}
+
+.email__send {
+  background-color: #86c19e;
+  padding: 30px;
+  font-family: "9623";
+  font-size: 24px;
+  color: white;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
 }
 
 @media (max-width: 1200px) {
@@ -872,6 +1037,18 @@ img {
   .icon-menu {
     display: block;
   }
+
+  .email__title {
+    margin: 30px 0px 0px 0px;
+  }
+
+  .email__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 35px 10px 30px 10px;
+  }
 }
 
 .webp .header { background: url(/img/bg.webp) top center no-repeat fixed; }
@@ -901,3 +1078,5 @@ img {
 .webp .content-three__icon { background: url(/img/Icon4.webp) center center no-repeat; }
 
 .webp .content-four__image-link a span { background: url(/img/logo-bike.webp) top no-repeat; }
+
+.webp .email__title:before { background: url(/img/Logo-menu.webp) center no-repeat; }
