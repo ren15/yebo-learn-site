@@ -47,11 +47,17 @@ img{
 }
 
 .header {
+<<<<<<< HEAD
 
     background: url(/img/bg.png) top center no-repeat fixed;
     height: 100vh;
     position: relative;
     
+=======
+    background: url(/img/bg.png) top center no-repeat fixed;
+    height: 100vh;
+    position: relative;
+>>>>>>> a7589507affcbe6e8a14f6a69d519e3861668532
 }
 .menu {
     position: fixed;
@@ -59,7 +65,11 @@ img{
     left:0%;
     z-index: 99999;
     padding: 60px 0px;
+<<<<<<< HEAD
     //transition: all 0.5s;
+=======
+    transition: all 0.5s;
+>>>>>>> a7589507affcbe6e8a14f6a69d519e3861668532
     background: url(/img/Logo-menu.png) center 35px no-repeat;
 
     @media (max-width: $md4+px) {
@@ -75,7 +85,10 @@ img{
             transition: transform 0.5s;
             transform: translateY(0px);
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> a7589507affcbe6e8a14f6a69d519e3861668532
     }
     &__list {
         max-width: 625px;
@@ -152,7 +165,10 @@ img{
         span{@include scale(0);
             &:first-child{@include rotate(-45deg);top: 8px;}
             &:last-child{@include rotate(45deg);bottom: 8px;}
+<<<<<<< HEAD
             background-color: #fff;
+=======
+>>>>>>> a7589507affcbe6e8a14f6a69d519e3861668532
         }
     }
 }
@@ -271,12 +287,15 @@ img{
         flex-direction: column;
         justify-content: center;
         padding: 100px 20px;
+<<<<<<< HEAD
         @media (max-width: 1200px) {
             padding: 50px 20px;
         }
         @media (max-width: $md2+px) {
             padding: 20px 20px;
         }
+=======
+>>>>>>> a7589507affcbe6e8a14f6a69d519e3861668532
     }
 
     &__icon{
@@ -309,7 +328,10 @@ img{
     flex: 0 1 70%;
     max-width: 400px;
     margin: 0 auto;
+<<<<<<< HEAD
     padding: 0px 20px 20px 20px;
+=======
+>>>>>>> a7589507affcbe6e8a14f6a69d519e3861668532
     &:after{
         content: '';
         border-bottom: 1px solid #d7d7d7;
@@ -319,6 +341,7 @@ img{
         left: 50%;
         bottom: 10%;
         margin-left: -15px;
+<<<<<<< HEAD
         @media (max-width: 1200px) {
             display: none;
         }
@@ -328,6 +351,16 @@ img{
         max-width: none;
         flex-direction: row;
         flex-wrap: wrap;
+=======
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        border: 10px solid transparent;
+        border-top: 10px solid #fff;
+        bottom: -20px;
+        left: 50%;
+>>>>>>> a7589507affcbe6e8a14f6a69d519e3861668532
     }
 
 }
@@ -368,9 +401,62 @@ img{
     }
 }
 
+<<<<<<< HEAD
 .content {
     display: flex;
     &__image-back{
+=======
+.one {
+}
+.one-section {
+    display: flex;
+		&__image-link {
+        }
+        &__image-back{
+            background: url(/img/Logo1-1.png) center center no-repeat;
+            width: 113px;
+            height: 118px;
+            left: 50%;
+            top: 50%;
+            margin-left: -66.5px;
+            margin-top: -69px;
+            position: absolute;
+        }
+
+		&__other {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+		}
+
+		&__text {
+            padding: 0 10px;
+		}
+
+        &__icon{
+            background: url(/img/Icon2.png) center center no-repeat;
+            height: 43px;
+        }
+		&__title {
+		}
+
+		&__subtitle {
+		}
+
+		&__image {
+            flex: 0 1 30%;
+
+		}
+}
+.two {
+}
+.two-section {
+    display: flex;
+    &__image-link {
+    }
+    &__image-back{
+        background: url(/img/Logo3-1.png) center center no-repeat;
+>>>>>>> a7589507affcbe6e8a14f6a69d519e3861668532
         width: 177px;
         height: 152px;
         left: 50%;
@@ -379,6 +465,7 @@ img{
         margin-top: -76px;
         position: absolute;
     }
+<<<<<<< HEAD
     &__image {
         position: relative;
         &::before{
@@ -402,10 +489,13 @@ img{
             }
         }
     }
+=======
+>>>>>>> a7589507affcbe6e8a14f6a69d519e3861668532
 		&__other {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+<<<<<<< HEAD
             @media (max-width: 1200px) {
                 flex-direction: row;
                 align-items: center;
@@ -500,10 +590,93 @@ img{
     &__section-2 {
         display: flex;
         flex: 0 1 33.333%;
+=======
+		}
+        &__icon{
+            background: url(/img/Icon3.png) center center no-repeat;
+            height: 43px;
+        }
+		&__text {
+            padding: 0 10px;
+		}
+
+		&__title {          
+		}
+
+		&__subtitle {
+		}
+
+		&__image {
+		}
+
+		&__image-link {
+		}
+}
+
+.three-section {
+    display: flex;
+    &__image-link {
+    }
+        &__image-back{
+            background: url(/img/Logo5-1.png) center center no-repeat;
+            width: 208px;
+            height: 67px;
+            left: 50%;
+            top: 50%;
+            margin-left: -104px;
+            margin-top: -34.5px;
+            position: absolute;
+        }
+
+		&__other {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+		}
+        &__icon{
+            background: url(/img/Icon4.png) center center no-repeat;
+            height: 43px;
+        }
+		&__text {
+            padding: 0 10px;
+		}
+
+		&__title {
+		}
+
+		&__subtitle {
+		}
+
+		&__image {
+		}
+}
+
+.four {
+
+    &__section {
+        display: flex;
+    }
+
+    &__section-1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 33.333%;
+        &:only-child {
+            width: 50%;
+        }
+        &:last-child {
+            width: 100%;
+        }
+    }
+    &__section-2 {
+        display: flex;
+        width: 33.333%;
+>>>>>>> a7589507affcbe6e8a14f6a69d519e3861668532
     }
     &__section-3 {
         display: flex;
         flex-wrap: wrap;
+<<<<<<< HEAD
         flex: 0 1 33.333%;
     }
 
@@ -517,6 +690,12 @@ img{
         &_21, &_22{
             flex: 0 1 50%;
         }
+=======
+        width: 33.333%;
+    }
+
+    &__image-link {
+>>>>>>> a7589507affcbe6e8a14f6a69d519e3861668532
         & a{
             display: inline-block;
             position: relative;
@@ -574,6 +753,7 @@ img{
         }
     }
 }
+<<<<<<< HEAD
 
 .slider-main {
     max-width: 1040px;
@@ -700,3 +880,5 @@ img{
         flex: 0 1 30%;
     }
 }
+=======
+>>>>>>> a7589507affcbe6e8a14f6a69d519e3861668532

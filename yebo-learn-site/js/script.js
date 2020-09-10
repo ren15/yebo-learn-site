@@ -62,6 +62,7 @@ window.addEventListener('resize',function(){
          document.querySelector('.menu').style.padding = '60px 0px'
     }
 });
+<<<<<<< HEAD
 
 const slider = document.querySelector('.slider')
 
@@ -92,3 +93,5 @@ sliderElements.forEach((el, i)=>{
   li.tabIndex = i
   const act = (i==0) ? (() => li.className = "active")() : ''
 })
+=======
+>>>>>>> a7589507affcbe6e8a14f6a69d519e3861668532
