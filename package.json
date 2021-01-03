@@ -5,7 +5,8 @@
   "main": "yebo-learn-site/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "gulp build"
   },
   "author": "Ilham_Kurbanov",
   "license": "ISC",
