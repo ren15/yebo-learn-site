@@ -5,7 +5,7 @@
   "main": "yebo-learn-site/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node yebo-learn-site/js/server.js"
+    "start": "node server.js"
   },
   "author": "Ilham_Kurbanov",
   "license": "ISC",
@@ -35,7 +35,7 @@
     "path": "^0.12.7"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/ren15/yebo-learn-site.git"
+    "type": "git",
+    "url": "https://github.com/ren15/yebo-learn-site.git"
   }
 }
