@@ -132,29 +132,34 @@ function fonts() {
 }
 
 gulp.task('svgSprite', function () {
-  return gulp
-    .src([source_folder + '/iconsprite/*.svg'])
-    .pipe(
-      svgSprite({
-        mode: {
-          stack: {
-            sprite: '../icons/icons.svg',
-            example: true
+  return new Promise(function (resolve, reject) {
+    gulp
+      .src([source_folder + '/iconsprite/*.svg'])
+      .pipe(
+        svgSprite({
+          mode: {
+            stack: {
+              sprite: '../icons/icons.svg',
+              example: true
+            }
           }
-        }
-      })
-    )
-    .pipe(dest(path.build.img))
+        })
+      )
+      .pipe(dest(path.build.img))
+  })
 })
 
 gulp.task('fonter', function () {
-  return src([source_folder + '/fonts/*.otf'])
-    .pipe(
-      fonter({
-        formats: ['ttf']
-      })
-    )
-    .pipe(dest(source_folder + '/fonts/'))
+  return new Promise(function (resolve, reject) {
+    src([source_folder + '/fonts/*.otf'])
+      .pipe(
+        fonter({
+          formats: ['ttf']
+        })
+      )
+      .pipe(dest(source_folder + '/fonts/'))
+    resolve()
+  })
 })
 
 function fontsStyle(params) {
