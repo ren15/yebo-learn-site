@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname + '/build')))
 
 // define the first route
 app.get('/', (request, response) => {
-  response.sendFile(path.join(__dirname + '/index.html'))
+  response.sendFile(path.join(__dirname + '/build/index.html'))
 })
 
 // start the server listening for requests
