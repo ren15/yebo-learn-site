@@ -146,6 +146,7 @@ gulp.task('svgSprite', function () {
         })
       )
       .pipe(dest(path.build.img))
+    resolve()
   })
 })
 
@@ -203,8 +204,8 @@ function clean(params) {
 
 const build = gulp.series(
   clean,
-  gulp.parallel(js, css, html, images, fonts),
-  fontsStyle
+  fontsStyle,
+  gulp.parallel(js, css, html, images, fonts)
 )
 const watch = gulp.parallel(build, watchFiles, browserSync)
 
