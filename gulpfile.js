@@ -163,7 +163,7 @@ gulp.task('fonter', function () {
   })
 })
 
-function fontsStyle(params) {
+function fontsStyle(done) {
   let file_content = fs.readFileSync(source_folder + '/scss/fonts.scss')
   if (file_content == '') {
     fs.writeFile(source_folder + '/scss/fonts.scss', '', cb)
@@ -189,6 +189,7 @@ function fontsStyle(params) {
       }
     })
   }
+  done()
 }
 
 function watchFiles(params) {
@@ -204,8 +205,8 @@ function clean(params) {
 
 const build = gulp.series(
   clean,
-  fontsStyle,
-  gulp.parallel(js, css, html, images, fonts)
+  gulp.parallel(js, css, html, images, fonts),
+  fontsStyle
 )
 const watch = gulp.parallel(build, watchFiles, browserSync)
 
